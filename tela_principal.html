@@ -1,24 +1,74 @@
 <html>
+<head>
+    <title> Tela Principal </title>
+</head>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .menu {
+            background-color: #2c3e50;
+            display: flex; 
+            flex-direction: column; 
+            padding: 25px;  
+            width: 200px;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif
+            
+        }
 
-    <head>
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            margin: 5px 8px;
+            border-radius: 0px;
+            font-family: Arial, Helvetica, sans-serif
+        }
 
-        Aqui tela principal
+        button:hover{
+             background-color: grey; 
 
-        Responsável - Nome: Izabel
+        }
 
-    </head>
+        button{
+            cursor: pointer
+        }
 
-    <body>
-        <br>
-        <a href="cadastro_cliente.html"> Cadastro de Cliente
-        <br>
-        <a href="cadastro_de_produto.html"> Cadastro de Produto
-        <br>
-        <a href="cadastro_pedido.html"> Cadastro de Pedido
-        <br>
-        <a href="tela_login.html"> Sair
-      
+        .sair .button{
+            background-color: red
+            
 
-    </body>
+        }
+
+        .sair .button:hover{
+            background-color: darkred;
+            color: white
+           
+            
+        }
+
+        h2{
+            text-align: center;
+            color: white
+        }
+
+    </style>
+    
+<body>
+    <div class="menu">
+        <h2> MENU </h2>
+    <a href="cadastro_cliente.html"> 
+    <button type="button" class="button"> Cadastro de Cliente </button></a>
+    <a href="cadastro_de_produto.html">
+    <button type="button" class="button"> Cadastro de Produto </button></a>
+    <a href="cadastro_pedido.html">
+    <button type="button" class="button"> Cadastro de Pedido </button></a>
+    <div class="sair">
+    <a href="tela_login.html">
+    <button type="button" class="button"> Sair </button></a>
+    </div>
+    </div>          
+</body>
 
 </html>
