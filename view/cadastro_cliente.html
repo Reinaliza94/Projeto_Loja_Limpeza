@@ -65,18 +65,22 @@
 
     <div class="cadastro">
         <label for="telefone">Telefone</label>
-        <input type="number" id="telefone">
+        <input type="text" id="telefone">
     </div>
 
     <div>
-        <a href="clientes_cadastrados.html">
-            <button type="submit">Cadastrar</button>
-        </a>
+        <button onclick="cadastrarCliente()">Cadastrar</button>
 
         <a href="tela_principal.html">
             <button type="button">Voltar</button>
         </a>
     </div>
+    
+    <script>
+        function cadastrarCliente() {
+            alert("Cliente cadastrado com sucesso!");
+        }
+    </script>
 
 </body>
 </html>
